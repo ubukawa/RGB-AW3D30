@@ -23,7 +23,7 @@ git clone https://github.com/ubukawa/RGB-AW3D30
 cd RGB-AW3D30
 ```
 
-### 1. Making a file storage
+### 1. Make a source file directory
 ```
 mkdir src
 ```
