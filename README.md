@@ -1,7 +1,22 @@
 # RGB-AW3D30
 template for rgbifying AW3D30
 
+# Condition
+I used this package with the following environments:  
+- Windows 10 Enterprise
+- Powershell
+- git version 2.25.0.windows.1
+- Docker version 20.10.8  
+
+This template worked well for the downloaded data as of 29 May 2022.
+
+
+# Data
+"ALOS World 3D - 30m (AW3D30)" is available for free download from the following URL. (It is FREE of charge, but please confirm its terms of use.)
+https://www.eorc.jaxa.jp/ALOS/en/dataset/aw3d30/aw3d30_e.htm
+
 # Steps
+## Step by step
 ### 0. Clone this reposiroty
 ```
 git clone https://github.com/ubukawa/RGB-AW3D30
@@ -56,4 +71,11 @@ You will get png files under zxy directory. (You can change the output name by e
 ```
 ./04-png.sh
 
+```
+
+## ALL at once
+Make sure you have zipped 5 by 5 degree data in your src directory.
+Then, run it.
+```
+./all.sh
 ```
