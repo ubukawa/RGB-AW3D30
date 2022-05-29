@@ -1,2 +1,1 @@
-#!/bin/sh
 mkdir 01_unzip; for f in src/*.zip; do unzip ${f} -d 01_unzip; done; gdal_merge.py -o input.tif 01_unzip/*/*_DSM.tif; rasterio rgbify -b -10000 -i 0.1 --max-z 11 --min-z 9 --format webp input.tif out.mbtiles; mb-util out.mbtiles zxy 
