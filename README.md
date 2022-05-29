@@ -38,6 +38,7 @@ Start Docker container that has gdal related tools and rgbifying tool.
 git clone https://github.com/ubukawa/rgbify
 cd rgbify
 docker build -t unvt/rgbify:ubukawa .
+cd ..
 docker run -it --rm -v ${PWD}:/data unvt/rgbify:ubukawa
 cd /data
 ```
